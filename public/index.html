@@ -6,20 +6,20 @@
       <script>
        function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
       </script>
-    <title>Success Motors - Create Lead</title>
+    <title>Success Motors - Making order</title>
   </head>
   <center>
     <header>
-      <h2><img src="index.jpg" alt="App logo" width="56" height="56" class="center"></h2>
+      <h2><img src="index.jpg" alt="App logo" width="156" height="136" class="center" ></h2>
       <h2>Success Motors</h2>
     </header>
     <body>
       
-      <h>Create Lead</h>
+      <h>Making order</h>
       <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
         <input type=hidden name='captcha_settings' value='{"keyname":"SuccessMotorsApiKey","fallback":"true","orgId":"00D5g0000062VN2","ts":""}'>
         <input type=hidden name="oid" value="00D5g0000062VN2">
-        <input type=hidden name="retURL" value="https://successmotorsapp.herokuapp.com/">
+        <input type=hidden name="retURL" value="http://google.com">
 
         <label for="company">Company Name:   </label><input required="required" id="company" maxlength="40" name="company" size="20" type="text" /><br>
 
