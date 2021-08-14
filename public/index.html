@@ -15,16 +15,17 @@
     </header>
     <body>
       
-      <h>Making order</h>
+      <h3>Making order</h3>
       <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
         <input type=hidden name='captcha_settings' value='{"keyname":"SuccessMotorsApiKey","fallback":"true","orgId":"00D5g0000062VN2","ts":""}'>
         <input type=hidden name="oid" value="00D5g0000062VN2">
         <input type=hidden name="retURL" value="http://google.com">
-
+        <h>
         <label for="company">Company Name:   </label><input required="required" id="company" maxlength="40" name="company" size="20" type="text" /><br>
-
+        </h>
+        <h>
         <label for="first_name">First Name:   </label><input required="required" id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-
+        </h>
         <label for="last_name">Last Name:   </label><input required="required" id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
         
         <label for="email">Email:   </label><input required="required" id="email" maxlength="80" name="email" size="20" type="email" /><br>
